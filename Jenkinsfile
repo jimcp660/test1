@@ -22,7 +22,7 @@ pipeline {
     }
     stage('stage3') {
       steps {
-        mail(subject: 'test stgae3', body: 'test', from: 'blueocean', to: 'bigjimcp660@gmail.com')
+        bat 'C:\\Users\\non\\Downloads;mkdir toto'
       }
     }
   }
