@@ -10,7 +10,7 @@ pipeline {
         }
         stage('stage1.2') {
           steps {
-            bat 'echo 1.2'
+            bat(script: 'echo 1.2', returnStdout: true, returnStatus: true)
           }
         }
       }
