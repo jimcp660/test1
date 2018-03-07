@@ -17,7 +17,7 @@ pipeline {
     }
     stage('stage2') {
       steps {
-        bat 'explorer'
+        sleep 10
       }
     }
     stage('stage3') {
