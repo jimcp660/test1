@@ -5,12 +5,12 @@ pipeline {
       parallel {
         stage('stage1.1') {
           steps {
-            bat(script: 'echo 1.1', returnStdout: true, returnStatus: true)
+            bat 'echo 1.1'
           }
         }
         stage('stage1.2') {
           steps {
-            bat(script: 'echo 1.2', returnStdout: true, returnStatus: true)
+            bat 'echo 1.2'
           }
         }
       }
