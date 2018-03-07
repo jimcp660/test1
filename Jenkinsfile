@@ -22,7 +22,7 @@ pipeline {
     }
     stage('stage3') {
       steps {
-        bat 'cd C:\\Users\\non\\Downloads;mkdir toto'
+        bat 'mkdir C:\\Users\\non\\Downloads\\toto'
       }
     }
   }
