@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('stage1.1') {
           steps {
-            sh "echo 1.1 test"
+            sh "echo 1.1 test again..."
           }
         }
         stage('stage1.2') {
