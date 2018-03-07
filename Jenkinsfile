@@ -1,16 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('test1') {
+    stage('stage1') {
       parallel {
-        stage('test1') {
+        stage('stage1.1') {
           steps {
-            bat(script: 'echo testtoto', returnStdout: true, returnStatus: true)
+            bat(script: 'echo 1.1', returnStdout: true, returnStatus: true)
           }
         }
-        stage('stage2') {
+        stage('stage1.2') {
           steps {
-            bat 'echo toto'
+            bat 'echo 1.2'
           }
         }
       }
